@@ -50,8 +50,8 @@
 
   gArmTokenSpaceGuid.PcdCpuVectorBaseAddress|0x9FF8C000
 
-  gEmbeddedTokenSpaceGuid.PcdPrePiStackBase|0x9FF90000
-  gEmbeddedTokenSpaceGuid.PcdPrePiStackSize|0x00040000      # 256K stack
+  gEmbeddedTokenSpaceGuid.PcdPrePiStackBase|0x9FFB0000
+  gEmbeddedTokenSpaceGuid.PcdPrePiStackSize|0x00020000
 
   # SmBios
   gQcomPkgTokenSpaceGuid.PcdSmbiosSystemVendor|"Lenovo"
