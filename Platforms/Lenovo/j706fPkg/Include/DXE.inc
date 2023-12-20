@@ -156,3 +156,4 @@
     INF Binaries/j706f/QcomPkg/Drivers/PILDxe/PILDxe.inf
     INF Binaries/j706f/QcomPkg/Application/QcomChargerApp/QcomChargerApp.inf
     INF Binaries/j706f/WP/ShmBridgeDxe/ShmBridgeDxe.inf
+    INF Binaries/j706f/WP/OSConfigDxe/OSConfigDxe.inf
