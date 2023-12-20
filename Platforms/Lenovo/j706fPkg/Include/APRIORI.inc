@@ -30,7 +30,7 @@ APRIORI DXE {
     INF Binaries/j706f/QcomPkg/Drivers/RpmhDxe/RpmhDxe.inf
     INF Binaries/j706f/QcomPkg/Drivers/PdcDxe/PdcDxe.inf
     INF Binaries/j706f/QcomPkg/Drivers/ClockDxe/ClockDxe.inf
-    INF Binaries/j706f/QcomPkg/Drivers/ShmBridgeDxe/ShmBridgeDxeLA.inf
+    INF Binaries/j706f/WP/ShmBridgeDxe/ShmBridgeDxe.inf
     INF Binaries/j706f/QcomPkg/Drivers/TzDxe/ScmDxeLA.inf
 
     INF MdeModulePkg/Universal/Disk/DiskIoDxe/DiskIoDxe.inf
@@ -57,9 +57,18 @@ APRIORI DXE {
 
     INF MdeModulePkg/Universal/WatchdogTimerDxe/WatchdogTimer.inf
 
+    FILE DRIVER = 5E0EAE60-EAED-4D75-B8BF-EDBBAABC3F09{
+            SECTION UI = "SecurityDxe"
+            SECTION PE32 = Binaries/j706f/WP/SecurityDxe/SecurityDxe.efi
+    }
+
     INF Binaries/j706f/QcomPkg/Drivers/EmbeddedMonotonicCounter/EmbeddedMonotonicCounter.inf
 
     INF EmbeddedPkg/RealTimeClockRuntimeDxe/RealTimeClockRuntimeDxe.inf
+
+    INF Binaries/j706f/WP/DppDxe/DppDxe.inf
+    INF Binaries/j706f/WP/RawFileSystemDxe/RawFileSystemDxe.inf
+
     INF MdeModulePkg/Universal/PrintDxe/PrintDxe.inf
     INF MdeModulePkg/Universal/DevicePathDxe/DevicePathDxe.inf
     INF MdeModulePkg/Universal/CapsuleRuntimeDxe/CapsuleRuntimeDxe.inf
@@ -71,13 +80,36 @@ APRIORI DXE {
 
     INF Binaries/j706f/QcomPkg/Drivers/I2CDxe/I2CDxe.inf
     INF Binaries/j706f/QcomPkg/Drivers/AdcDxe/AdcDxe.inf
-    INF Binaries/j706f/QcomPkg/Drivers/UsbPwrCtrlDxe/UsbPwrCtrlDxe.inf
+    INF Binaries/j706f/WP/UsbPwrCtrlDxe/UsbPwrCtrlDxe.inf
     INF Binaries/j706f/QcomPkg/Drivers/QcomChargerDxe/QcomChargerDxeLA.inf
     INF Binaries/j706f/QcomPkg/Drivers/ChargerExDxe/ChargerExDxe.inf
-    INF Binaries/j706f/QcomPkg/Drivers/UsbfnDwc3Dxe/UsbfnDwc3Dxe.inf
-    INF Binaries/j706f/QcomPkg/Drivers/UsbMsdDxe/UsbMsdDxe.inf
-    INF Binaries/j706f/QcomPkg/Drivers/UsbDeviceDxe/UsbDeviceDxe.inf
-    INF Binaries/j706f/QcomPkg/Drivers/UsbConfigDxe/UsbConfigDxe.inf
+    INF Binaries/j706f/WP/UsbfnDwc3Dxe/UsbfnDwc3Dxe.inf
+    INF Binaries/j706f/WP/XhciPciEmulationDxe/XhciPciEmulationDxe.inf
+
+    FILE DRIVER = B7F50E91-A759-412C-ADE4-DCD03E7F7C28 {
+            SECTION PE32 = Binaries/j706f/WP/XhciDxe/XhciDxe.efi
+            SECTION UI = "XhciDxe"
+    }
+
+    FILE DRIVER = 240612B7-A063-11D4-9A3A-0090273FC14D {
+            SECTION PE32 = Binaries/j706f/WP/UsbBusDxe/UsbBusDxe.efi
+            SECTION UI = "UsbBusDxe"
+    }
+
+    FILE DRIVER = 2D2E62CF-9ECF-43B7-8219-94E7FC713DFE {
+            SECTION PE32 = Binaries/j706f/WP/UsbKbDxe/UsbKbDxe.efi
+            SECTION UI = "UsbKbDxe"
+    }
+
+    FILE DRIVER = 9FB4B4A7-42C0-4BCD-8540-9BCC6711F83E {
+            SECTION PE32 = Binaries/j706f/WP/UsbMassStorageDxe/UsbMassStorageDxe.efi
+            SECTION UI = "UsbMassStorageDxe"
+    }
+
+    INF Binaries/j706f/WP/UsbConfigDxe/UsbConfigDxe.inf
+    INF Binaries/j706f/WP/UsbInitDxe/UsbInitDxe.inf
+    INF Binaries/j706f/WP/UsbDeviceDxe/UsbDeviceDxe.inf
+    INF Binaries/j706f/WP/UsbfnChgDxe/UsbfnChgDxe.inf
     INF Binaries/j706f/QcomPkg/Drivers/ButtonsDxe/ButtonsDxe.inf
     INF Binaries/j706f/QcomPkg/Drivers/TsensDxe/TsensDxe.inf
 
@@ -104,9 +136,22 @@ APRIORI DXE {
             SECTION UI = "RngDxe"
     }
 
+    FILE DRIVER = 7861C9D1-43B6-410C-B8A7-C129A9346D9D {
+            SECTION UI = "TpmDxe"
+            SECTION PE32 = Binaries/j706f/WP/TrEEDxe/TpmDxe.efi
+    }
+
+    FILE DRIVER =   59CC11DC-1C60-11E1-A80F-A3B54824019B {
+            SECTION UI = "TrEEDxe"
+            SECTION PE32 = Binaries/j706f/WP/TrEEDxe/TrEEDxe.efi
+    }
+
+    INF Binaries/j706f/WP/AdapterInformationDxe/AdapterInformationDxe.inf
     INF Binaries/j706f/QcomPkg/Drivers/SimpleTextInOutSerialDxe/SimpleTextInOutSerial.inf
 
     INF MdeModulePkg/Universal/Console/ConPlatformDxe/ConPlatformDxe.inf
     INF MdeModulePkg/Universal/Console/ConSplitterDxe/ConSplitterDxe.inf
     INF MdeModulePkg/Universal/Console/GraphicsConsoleDxe/GraphicsConsoleDxe.inf
+
+    INF Binaries/j706f/WP/OSConfigDxe/OSConfigDxe.inf
 }
