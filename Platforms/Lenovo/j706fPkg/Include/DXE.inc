@@ -148,6 +148,7 @@
             SECTION PE32 = Binaries/j706f/WP/TrEEDxe/TrEEDxe.efi
     }
 
+    INF Binaries/j706f/WP/AdapterInformationDxe/AdapterInformationDxe.inf
     INF MdeModulePkg/Universal/BdsDxe/BdsDxe.inf
     INF MdeModulePkg/Universal/Acpi/BootGraphicsResourceTableDxe/BootGraphicsResourceTableDxe.inf
     INF MdeModulePkg/Universal/Acpi/FirmwarePerformanceDataTableDxe/FirmwarePerformanceDxe.inf
