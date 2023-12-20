@@ -73,7 +73,6 @@ class SettingsManager(UpdateSettingsManager, SetupSettingsManager, PrEvalSetting
             If no RequiredSubmodules return an empty iterable
         """
         return [
-            RequiredSubmodule("Binaries", True),
             RequiredSubmodule("Common/Mu", True),
             RequiredSubmodule("Common/Mu_Tiano_Plus", True),
             RequiredSubmodule("Common/Mu_OEM_Sample", True),

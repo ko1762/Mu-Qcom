@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Build an Android kernel that is actually UEFI disguised as the Kernel
-cat ./BootShim/AARCH64/BootShim.bin "./Build/j706fPkg-AARCH64/${_TARGET_BUILD_MODE}_CLANG38/FV/LENOVO_j706f_UEFI.fd" > "./Build/j706fPkg-AARCH64/${_TARGET_BUILD_MODE}_CLANG38/FV/LENOVO_j706f_UEFI.fd-bootshim"||exit 1
-gzip -c < "./Build/j706fPkg-AARCH64/${_TARGET_BUILD_MODE}_CLANG38/FV/LENOVO_j706f_UEFI.fd-bootshim" > "./Build/j706fPkg-AARCH64/${_TARGET_BUILD_MODE}_CLANG38/FV/LENOVO_j706f_UEFI.fd-bootshim.gz"||exit 1
-cat "./Build/j706fPkg-AARCH64/${_TARGET_BUILD_MODE}_CLANG38/FV/LENOVO_j706f_UEFI.fd-bootshim.gz" ./ImageResources/DTBs/j706f.dtb > ./ImageResources/bootpayload.bin||exit 1
+cat ./BootShim/AARCH64/BootShim.bin "./Build/j706fPkg-AARCH64/${_TARGET_BUILD_MODE}_CLANG38/FV/LENOVO_J706F_UEFI.fd" > "./Build/j706fPkg-AARCH64/${_TARGET_BUILD_MODE}_CLANG38/FV/LENOVO_J706F_UEFI.fd-bootshim"||exit 1
+gzip -c < "./Build/j706fPkg-AARCH64/${_TARGET_BUILD_MODE}_CLANG38/FV/LENOVO_J706F_UEFI.fd-bootshim" > "./Build/j706fPkg-AARCH64/${_TARGET_BUILD_MODE}_CLANG38/FV/LENOVO_J706F_UEFI.fd-bootshim.gz"||exit 1
+cat "./Build/j706fPkg-AARCH64/${_TARGET_BUILD_MODE}_CLANG38/FV/LENOVO_J706F_UEFI.fd-bootshim.gz" ./ImageResources/DTBs/j706f.dtb > ./ImageResources/bootpayload.bin||exit 1
 
 # Create bootable Android boot.img
 python3 ./ImageResources/mkbootimg.py \
