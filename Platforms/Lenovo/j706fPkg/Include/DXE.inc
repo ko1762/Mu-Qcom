@@ -9,12 +9,6 @@
     INF Binaries/j706f/QcomPkg/Drivers/TzDxe/TzDxeLA.inf
 
     INF MdeModulePkg/Universal/WatchdogTimerDxe/WatchdogTimer.inf
-
-    FILE DRIVER = 5E0EAE60-EAED-4D75-B8BF-EDBBAABC3F09{
-            SECTION UI = "SecurityDxe"
-            SECTION PE32 = Binaries/j706f/WP/SecurityDxe/SecurityDxe.efi
-    }
-
     INF MdeModulePkg/Universal/CapsuleRuntimeDxe/CapsuleRuntimeDxe.inf
     INF MdeModulePkg/Universal/ReportStatusCodeRouter/RuntimeDxe/ReportStatusCodeRouterRuntimeDxe.inf
     INF MdeModulePkg/Universal/StatusCodeHandler/RuntimeDxe/StatusCodeHandlerRuntimeDxe.inf
@@ -26,9 +20,6 @@
 
     INF EmbeddedPkg/RealTimeClockRuntimeDxe/RealTimeClockRuntimeDxe.inf
     INF EmbeddedPkg/MetronomeDxe/MetronomeDxe.inf
-
-    INF Binaries/j706f/WP/DppDxe/DppDxe.inf
-    INF Binaries/j706f/WP/RawFileSystemDxe/RawFileSystemDxe.inf
 
     INF MdeModulePkg/Universal/PrintDxe/PrintDxe.inf
     INF MdeModulePkg/Universal/DevicePathDxe/DevicePathDxe.inf
@@ -136,16 +127,6 @@
     FILE DRIVER = B0D3689E-11F8-43C6-8ECE-023A29CEC35B {
             SECTION PE32 = Binaries/j706f/QcomPkg/Drivers/RNGDxe/RngDxe.efi
             SECTION UI = "RngDxe"
-    }
-
-    FILE DRIVER = 7861C9D1-43B6-410C-B8A7-C129A9346D9D {
-            SECTION UI = "TpmDxe"
-            SECTION PE32 = Binaries/j706f/WP/TrEEDxe/TpmDxe.efi
-    }
-
-    FILE DRIVER =   59CC11DC-1C60-11E1-A80F-A3B54824019B {
-            SECTION UI = "TrEEDxe"
-            SECTION PE32 = Binaries/j706f/WP/TrEEDxe/TrEEDxe.efi
     }
 
     INF Binaries/j706f/WP/AdapterInformationDxe/AdapterInformationDxe.inf
