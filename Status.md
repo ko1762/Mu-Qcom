@@ -358,10 +358,10 @@
 |:------|:----------|:---:|
 |Display||✅|
 |Touchscreen||❌|
-|Clocks||❔|
+|Clocks||✅|
 |UFS||✅|
 |Buttons||✅|
-|USB|No USB Power|⚠️|
+|USB||✅|
 |ACPI||✅|
 |Slot Switch||❔|
 |UART||❔|
@@ -379,7 +379,7 @@
 |Buttons||✅|
 |Sensors||❌|
 |Battery||❌|
-|USB|No USB Power|⚠️|
+|USB||✅|
 |Charging||❌|
 |WLAN||❌|
 |CPU||✅|
@@ -936,7 +936,7 @@
 |Clocks||✅|
 |eMMC||✅|
 |Buttons||✅|
-|USB|No USB Host & Power|⚠️|
+|USB|No USB Host|⚠️|
 |SD Card||❌|
 |ACPI||✅|
 |UART||❔|
@@ -954,9 +954,9 @@
 |Buttons||❌|
 |Sensors||❌|
 |Battery||❌|
-|USB|No USB Power|⚠️|
+|USB||✅|
 |Charging||❌|
-|CPU|Cores aren't configured right|⚠️|
+|CPU|Only 4 Cores|⚠️|
 |Touchscreen||❌|
 |Bluetooth||❌|
 |GPS||❌|
