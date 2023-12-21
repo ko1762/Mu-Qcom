@@ -111,6 +111,7 @@
 
     INF Binaries/j706f/WP/UsbConfigDxe/UsbConfigDxe.inf
     INF Binaries/j706f/WP/UsbInitDxe/UsbInitDxe.inf
+    INF Binaries/j706f/WP/UsbMsdDxe/UsbMsdDxe.inf
     INF Binaries/j706f/WP/UsbDeviceDxe/UsbDeviceDxe.inf
     INF Binaries/j706f/WP/UsbfnChgDxe/UsbfnChgDxe.inf
 
