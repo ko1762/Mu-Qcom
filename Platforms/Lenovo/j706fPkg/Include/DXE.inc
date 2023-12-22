@@ -84,7 +84,7 @@
     INF Binaries/j706f/QcomPkg/Drivers/TsensDxe/TsensDxe.inf
     INF Binaries/j706f/QcomPkg/Drivers/LimitsDxe/LimitsDxe.inf
     INF Binaries/j706f/QcomPkg/Drivers/DDRInfoDxe/DDRInfoDxe.inf
-    INF Binaries/j706f/WP/UsbfnDwc3Dxe/UsbfnDwc3Dxe.inf
+    INF Binaries/j706f/QcomPkg/Drivers//UsbfnDwc3Dxe/UsbfnDwc3Dxe.inf
     INF Binaries/j706f/WP/XhciPciEmulationDxe/XhciPciEmulationDxe.inf
 
     FILE DRIVER = B7F50E91-A759-412C-ADE4-DCD03E7F7C28 {
@@ -109,11 +109,10 @@
             SECTION UI = "UsbMassStorageDxe"
     }
 
-    INF Binaries/j706f/WP/UsbConfigDxe/UsbConfigDxe.inf
+    INF Binaries/j706f/QcomPkg/Drivers/UsbConfigDxe/UsbConfigDxe.inf
     INF Binaries/j706f/WP/UsbInitDxe/UsbInitDxe.inf
     INF Binaries/j706f/WP/UsbMsdDxe/UsbMsdDxe.inf
     INF Binaries/j706f/WP/UsbDeviceDxe/UsbDeviceDxe.inf
-    INF Binaries/j706f/WP/UsbfnChgDxe/UsbfnChgDxe.inf
 
     FILE DRIVER = 3ADF8DDA-1850-44C5-8C63-BB991849BC6F {
             SECTION PE32 = Binaries/j706f/QcomPkg/Drivers/HashDxe/HashDxe.efi
