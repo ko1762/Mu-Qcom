@@ -84,7 +84,7 @@
     INF Binaries/j706f/QcomPkg/Drivers/TsensDxe/TsensDxe.inf
     INF Binaries/j706f/QcomPkg/Drivers/LimitsDxe/LimitsDxe.inf
     INF Binaries/j706f/QcomPkg/Drivers/DDRInfoDxe/DDRInfoDxe.inf
-    INF Binaries/j706f/QcomPkg/Drivers//UsbfnDwc3Dxe/UsbfnDwc3Dxe.inf
+    INF Binaries/j706f/QcomPkg/Drivers/UsbfnDwc3Dxe/UsbfnDwc3Dxe.inf
     INF Binaries/j706f/WP/XhciPciEmulationDxe/XhciPciEmulationDxe.inf
 
     FILE DRIVER = B7F50E91-A759-412C-ADE4-DCD03E7F7C28 {
